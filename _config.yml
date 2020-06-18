@@ -102,7 +102,7 @@ author:
       icon: "fas fa-fw fa-envelope-square"
       url: "mailto:your_email@email.com"
     - label: "ResearchGate"
-      icon: "fab fa-researchgate fa-9x"
+      icon: "fab fa-researchgate"
       url: "https://your-website.com"
     - label: "ORCID"
       icon: "fab fa-orcid"
