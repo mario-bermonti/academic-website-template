@@ -1,11 +1,15 @@
 main:
-  - title: "Posts"
+  - title: "Research"
+    url: /Research/
+  - title: "Publications"
+    url: /Publications/
+  - title: "Software"
+    url: /software/
+  - title: "Talks | Presentations"
+    url: /Talks | Presentations/
+  - title: "CV"
+    url: /CV/
+  - title: "Blog"
     url: /posts/
-  - title: "Categories"
-    url: /categories/
-  - title: "Tags"
-    url: /tags/
-  - title: "About"
-    url: /about/
 
 
