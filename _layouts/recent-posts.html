@@ -1,0 +1,17 @@
+---
+layout: archive
+---
+
+{{ content }}
+
+<h1>Recent Posts</h1>
+{% for post in site.posts offset:1 limit:5 %}
+{% include archive-single.html type=page.entries_layout %}
+{% endfor %}
+
+<h3>Browse posts by
+    <a href={% link _pages/category-archive.md %}>categories</a>,
+    <a href={% link _pages/tag-archive.md %}>tags</a>,
+    or by <a href={% link _pages/posts-by-year.md %}>year.</h3>
+
+<a href="#page-title" class="back-to-top">{{ site.data.ui-text[site.locale].back_to_top | default: 'Back to Top' }} &uarr;</a>
