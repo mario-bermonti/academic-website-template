@@ -1,7 +1,7 @@
 ---
 title: "Research"
 excerpt: "My research interests and projects"
-permalink: /research
+permalink: /research/
 layout: single
 ---
 
