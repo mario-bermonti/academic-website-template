@@ -1,7 +1,7 @@
 ---
 title: "Name of my blog"
 excerpt: "Personal blog about how coding and research"
-permalink: /blog/
+permalink: /blog.html
 layout: recent-posts
 ---
 
