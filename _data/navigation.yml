@@ -1,8 +1,8 @@
 main:
   - title: "Home"
     url: /
-  - title: "Research"
-    url: /Research/
+  - title: "research"
+    url: /research/
   - title: "Publications"
     url: /Publications/
   - title: "Software"
@@ -12,6 +12,6 @@ main:
   - title: "CV"
     url: /CV/
   - title: "Blog"
-    url: /Blog/
+    url: /blog/
 
 
