@@ -4,13 +4,13 @@ main:
   - title: "Research"
     url: /research/
   - title: "Publications"
-    url: /Publications/
+    url: /publications/
   - title: "Software"
     url: /software/
-  - title: "Talks | Presentations"
-    url: /Talks | Presentations/
+  - title: "Talks"
+    url: /talks/
   - title: "CV"
-    url: /CV/
+    url: /cv/
   - title: "Blog"
     url: /blog/
 
