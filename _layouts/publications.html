@@ -1,0 +1,19 @@
+---
+layout: single
+---
+
+{% for pub in site.data.publications %}
+
+<h3>
+    {% if pub.url_or_doi %}
+    <em><a href="{{ pub.url_or_doi }}">{{ pub.title }}</a></em>
+    {% else %}
+    {{ pub.title }}
+    {% endif %}
+</h3> 
+<p>Published in {{ pub.where }}, {{ pub.date }}</p>
+<p>{{ pub.description }}</p>
+{% if pub.authors %}
+<p>{{ pub.authors }}</p>
+{% endif %}
+{% endfor %}
