@@ -2,7 +2,6 @@
 title: "Research"
 excerpt: "My research interests and projects"
 permalink: /research/
-layout: single
 ---
 
 ## Research interests
