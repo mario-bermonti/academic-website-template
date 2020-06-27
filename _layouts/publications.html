@@ -2,19 +2,19 @@
 layout: single
 ---
 
-{% for pub in site.data.publications %}
 {{ content}}
 
-<h3>
-    {% if pub.url_or_doi %}
-    <em><a href="{{ pub.url_or_doi }}">{{ pub.title }}</a></em>
-    {% else %}
-    {{ pub.title }}
-    {% endif %}
-</h3> 
-<p>Published in {{ pub.where }}, {{ pub.date }}</p>
-<p>{{ pub.description }}</p>
-{% if pub.authors %}
-<p>{{ pub.authors }}</p>
+{% if site.data.publications %}
+    {% for pub in site.data.publications %}
+        {% if pub.url_or_doi %}
+            <h3><em><a href="{{ pub.url_or_doi }}">{{ pub.title }}</a></em></h3>
+        {% else %}
+            <h3>{{ pub.title }}</h3>
+        {% endif %}
+        <p>Published in {{ pub.where }}, {{ pub.date }}</p>
+        <p>{{ pub.description }}</p>
+        {% if pub.authors %}
+            <p>{{ pub.authors }}</p>
+        {% endif %}
+    {% endfor %}
 {% endif %}
-{% endfor %}
