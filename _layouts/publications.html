@@ -16,5 +16,8 @@ layout: single
         {% if pub.authors %}
             <p>{{ pub.authors }}</p>
         {% endif %}
+        {% if pub.file %}
+            <a href="/downloads/{{ pub.file }}">Download file</a>
+        {% endif %}
     {% endfor %}
 {% endif %}

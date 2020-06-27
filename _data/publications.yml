@@ -5,6 +5,7 @@
     This is the description of my paper
   authors: Author 1, Author 2
   url_or_doi: "https://scholar.google.com/"
+  file: f1.pdf
 
 - title: "Publication title #2"
   date: "2019"
@@ -13,8 +14,9 @@
     This is the description of my paper
   authors: Author 1, Author 2
   url_or_doi: "https://scholar.google.com/"
+  file: f1.pdf
 
-  # Example without url or doi
+  # Example without url or doi, file
 - title: "Publication title #3"
   date: "2018"
   where: Journal X
