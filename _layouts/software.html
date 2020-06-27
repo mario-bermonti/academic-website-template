@@ -1,0 +1,19 @@
+---
+layout: single
+---
+
+{{ content }}
+
+{% if site.data.software %}
+    {% for project in site.data.software %}
+        {% if project.url_or_doi %}
+            <h3><em><a href="{{ project.url_or_doi }}">{{ project.name }}</a></em></h3>
+        {% else %}
+            <h3>{{ project.name }}</h3>
+        {% endif %}
+        <p>{{ project.description }}
+        {% if project.contributors %}
+            <br /><em>Contributor(s)</em>: {{ project.contributors }}</p>
+        {% endif %}
+    {% endfor %}
+{% endif %}

@@ -1,0 +1,16 @@
+- name: "Project #1"
+  description:
+    This is the description of my software project
+  contributors: Contributor 1, Contributor 2
+  url_or_doi: "https://github.com/"
+
+- name: "Project #2"
+  description:
+    This is the description of my software project
+  contributors: Contributor 1, Contributor 2
+  url_or_doi: "https://github.com/"
+
+  # Example without url or doi or contributors
+- name: "Project #3"
+  description:
+    This is the description of my software project
