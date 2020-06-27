@@ -6,7 +6,11 @@ layout: single
 
 {% if site.data.research %}
     {% for project in site.data.research %}
-        <h3><em>{{ project.title }}</em></h3> 
+        {% if project.url_or_doi %}
+            <h3><em><a href="{{ project.url_or_doi }}">{{ project.title }}</a></em></h3>
+        {% else %}
+            <h3>{{ project.title }}</h3>
+        {% endif %}
         <p>{{ project.description }}
         {% if project.investigators %}
             <br /><em>Investigator(s)</em>: {{ project.investigators }}</p>
