@@ -5,6 +5,7 @@
     This is the description of the talk I gave
   authors: Author 1, Author 2
   url_or_doi: "https://www.youtube.com/"
+  file: f1.pdf
 
 - title: "Talk #2"
   date: "2019"
@@ -13,8 +14,9 @@
     This is the description of the talk I gave
   authors: Author 1, Author 2
   url_or_doi: "https://www.youtube.com/"
+  file: f1.pdf
 
-  # Example without url or doi
+  # Example without url or doi, file
 - title: "Talk #3"
   date: "2018"
   where: Conference Z

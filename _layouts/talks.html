@@ -18,5 +18,8 @@ layout: single
         {% if talk.authors %}
             <p>{{ talk.authors }}</p>
         {% endif %}
+        {% if talk.file %}
+            <a href="/downloads/{{ talk.file }}">Download file</a>
+        {% endif %}
     {% endfor %}
 {% endif %}
