@@ -1,0 +1,14 @@
+- title: "Research project #1"
+  description:
+    This is the description of my research project
+  investigators: Investigator 1, Investigator 2
+
+- title: "Research project #2"
+  description:
+    This is the description of my research project
+  investigators: Investigator 1, Investigator 2
+
+# Example without investigators
+- title: "Research project #3"
+  description:
+    This is the description of my research project

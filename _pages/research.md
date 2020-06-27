@@ -1,17 +1,8 @@
 ---
 title: "Research"
-excerpt: "My research interests and projects"
+excerpt: "My research projects"
 permalink: /research/
+layout: research
 ---
 
-## Research interests
-### Research interest # 1
-### Research interest # 2
-### Research interest # 3
-
-
-
-## Research projects
-### Research project # 1
-### Research project # 2
-### Research project # 3
+Include a general description of your research projects.
