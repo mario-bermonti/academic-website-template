@@ -19,7 +19,7 @@ layout: single
             <p>{{ talk.authors }}</p>
         {% endif %}
         {% if talk.file %}
-            <a href="/downloads/{{ talk.file }}">Download file</a>
+            <a href="{{ site.url }}{{ site.baseurl }}/downloads/{{ talk.file }}">Download file</a>
         {% endif %}
     {% endfor %}
 {% endif %}
