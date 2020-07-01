@@ -276,6 +276,13 @@
     padding-right: gutter(1 of 12);
   }
 
+  /* custom academic-website-template */
+  .feature__item-body {
+      padding-left: gutter(1 of 12);
+      padding-right: gutter(1 of 12);
+      text-align: center;
+  }
+
   a.btn::before {
     content: '';
     position: absolute;
