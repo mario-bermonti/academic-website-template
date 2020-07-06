@@ -1,7 +1,7 @@
 ---
 title: "Software projects"
 excerpt: List of software projects"
-permalink: /software
+permalink: /software/
 layout: software
 ---
 
