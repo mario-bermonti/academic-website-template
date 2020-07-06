@@ -5,7 +5,7 @@ permalink: /
 title: Welcome!
 
 # Delete next lines if you prefer not to have a feature row
-feature_row_title: Academic Interests
+feature_row_title: Research Interests
 feature_row:
   - image_path: /images/p1.jpg
     alt: "Research interest 1"
