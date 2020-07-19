@@ -10,8 +10,8 @@ layout: archive
 {% endfor %}
 
 <h3>Browse posts by
-    <a href={% link _pages/category-archive.md %}>categories</a>,
-    <a href={% link _pages/tag-archive.md %}>tags</a>,
-    or by <a href={% link _pages/posts-by-year.md %}>year.</h3>
+    <a href="{{ site.url }}{{ site.baseurl }}/categories">categories</a>,
+    <a href="{{ site.url }}{{ site.baseurl }}/tags">tags</a>,
+    or by <a href="{{ site.url }}{{ site.baseurl }}/posts-by-year">year.</h3>
 
 <a href="#page-title" class="back-to-top">{{ site.data.ui-text[site.locale].back_to_top | default: 'Back to Top' }} &uarr;</a>
