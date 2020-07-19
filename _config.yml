@@ -107,7 +107,7 @@ author:
       url: "https://www.researchgate.net/"
     - label: "ORCID"
       icon: "fab fa-orcid fa-lg"
-      url: "https://ORCID.com/"
+      url: "https://orcid.org/"
     - label: "Google Scholar"
       icon: "ai ai-google-scholar-square"
       url: "https://scholar.google.com/"
