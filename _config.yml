@@ -104,7 +104,7 @@ author:
       url: "mailto:your_email@email.com"
     - label: "ResearchGate"
       icon: "fab fa-researchgate fa-lg"
-      url: "https://your-website.com"
+      url: "https://www.researchgate.net/"
     - label: "ORCID"
       icon: "fab fa-orcid fa-lg"
       url: "https://ORCID.com/"
