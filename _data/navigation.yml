@@ -5,10 +5,10 @@ main:
     url: /research/
   - title: "Publications"
     url: /publications/
-  - title: "Software"
-    url: /software/
   - title: "Talks"
     url: /talks/
+  - title: "Software"
+    url: /software/
   - title: "CV"
     url: /downloads/cv.pdf
   - title: "Blog"
