@@ -22,6 +22,7 @@ feature_row:
     title: "Academic interest 3"
     excerpt:
         "This is a description of item 3"
+# Delete the previous lines if you prefer not to have a feature row
 ---
 
 Include a long description about yourself and this website.
@@ -35,3 +36,4 @@ Include a long description about yourself and this website.
 {% if page.feature_row %}
   {% include feature_row %}
 {% endif %}
+<!-- Delete previous lines if you prefer not to have a feature row. -->
