@@ -1,0 +1,225 @@
+* Academic Website Template
+  This template was designed to provide an easy way to create academic 
+  websites. The goal is to lower the barrier to create webpages
+  for scholars with limited knowledge about programming.
+
+  This is achieved by separating content from form. This way you can simply
+  add your content and everything else is done for you. This template is
+  heavily influenced by [[https://github.com/academicpages/academicpages.github.io][Academic pages]] and [[https://www.simonho.ca/][Simon Ho's website]].
+
+  This website template is created with [[https://jekyllrb.com/][Jekyll]] - a static site generator -
+  and uses the [[https://mmistakes.github.io/minimal-mistakes/docs/][minimal mistakes theme]]. The template was created so that 
+  it's easy to deyloy to [[https://pages.github.com/][Github Pages]], but you can make simple
+  modifications to deploy it on other services (see the [[https://jekyllrb.com/docs/deployment/][Jekyll documentation]]).
+
+* Building your website
+  1. Create your own copy of this website by [[https://guides.github.com/activities/forking/][forking]] this GitHub repo
+  3. [[https://docs.github.com/en/github/managing-subscriptions-and-notifications-on-github/managing-your-subscriptions#unwatch-a-repository][Unwatch]] the repo
+  4. [[https://docs.github.com/en/enterprise/2.14/user/articles/renaming-a-repository][Rename the repo]] to <username>.github.io ([[https://docs.github.com/en/github/working-with-github-pages/creating-a-github-pages-site-with-jekyll#creating-a-repository-for-your-site][see step 3 of this guide]])
+  4. Your website should be live at
+     [[https://][https://<username>.github.io/]] ([[https://docs.github.com/en/github/working-with-github-pages/creating-a-github-pages-site-with-jekyll#creating-a-repository-for-your-site][see step 7 of this guide]])
+
+* Modifying the website
+** Important note
+   There are two ways to modify your website. Each has pros and 
+   cons and require using different tools. You should make you decision
+   based on how comfortable you feel with the tools required for 
+   each option, but most importantly, how likely you are of using
+   them for other things. It may not be useful to learn a new tool
+   if you're only going to use it once. 
+
+   The two options are using GitHub's webpage or using Git locally. I
+   will discuss them very briefly to help you make your decision.
+   You can read the information in the section below "Note about modifying
+   your website"
+
+** Adding the website's basic information
+   This information is configured in
+   the =_config.yml= file. Here you can add information like the website's name,
+   your name, links to your research platforms, and many other information. 
+   Explore the different options to find everything that can be modified.
+   
+** Adding content
+   Most pages incorporate their content from two sources: the actual 
+   file (e.g., =Research.md=) and the =yaml= file with the same name that 
+   can be found in the =_data= directory. 
+
+   This helps facilitate the process of adding new information because
+   the =yaml= files are very easy and intuitive to use, even if you don't know
+   any programming. These files follow a /bullet/ or outline format and just
+   require you to /list/ the contents you want displayed in your page.
+
+   For example, the Research page presents all the information that you include
+   in the =Research.md= file and then it includes the research projects
+   you have listed in the =research.yml= file. This makes it easier to 
+   continually add new research projects in the =yaml= file and keep your 
+   webpage updated.
+
+*** Long version
+    If you know your way aroung Jekyll or similar platforms, you can skip
+    to the next section /Short version/.
+
+    This is the longer version and has all the details about managing your
+    website and should get you through, even if you don't know anything about
+    programming.
+**** Add content to existing pages
+***** Regular content
+     You can find the current pages in the =_pages= directory. To add new content,
+     just write it in the file and save it. Also modify the page's metadata
+     at the top of the page if you need to.
+    
+     If you would like to change the name of the page in the menu bar, you 
+     have to modify it in the =navigation.yml= file that is in the =_data= directory.
+***** Yaml content
+      The Research, Publications, Talks, and Software pages list the relevant 
+      information by collecting it from its associated =yaml= file. These
+      files are located in the =_data= directory and have the same name
+      as the page (e.g., Research).
+     
+      To modify its content, just substitute the current information
+      with your information. Keep the "" if there are any. Optional 
+      fields are identified with comments.
+     
+***** Featured rows
+     The home and research pages contain a feature row to highlight your
+     interests. To modify these rows, you have to provide the required
+     information in each page. You can check the [[https://mmistakes.github.io/minimal-mistakes/docs/helpers/#feature-row][theme's webpage]]
+     for more details.
+
+**** Add new pages
+     - Create a =markdown= file in the =_pages= directory and add the content.
+     - Add metadata at the top of the file
+       Hint: create a copy of an existing page and add the new content
+     - Add the page to the menu bar, by adding it to the =navigation.yml= 
+       file. Follow the format of other entries and add the name of the tab
+       and add where the file will be saved to (permalink).
+
+**** Remove existing pages
+     - Delete the page from the =_pages= directory
+     - Delete the entry from the =navigation.yml=
+
+**** Adding files for download
+      Add the files you need to be available in the website (e.g., CV, pdf
+      for downloading) in the =downloads= directory.
+
+**** Creating blog posts
+***** Blog's home page
+      To modify the blog's home page, just add your content to the =blog.md=
+      file in =_pages=.
+
+      Hint: If you only want the blog, you will have to remove all other
+            pages and set the blog's home as the website's homepage.
+***** Blog posts
+     Blog posts are in the =_posts= directory. You can remove the ones
+     that are there for illustration purposes. They are all from the 
+     minimal mistakes theme project template.
+
+     To add new blog posts, just create a new =markdown= file that meets the
+     name and metadata requirements and add your content. See the [[https://jekyllrb.com/docs/posts/][Jekyll's]] 
+     webpage for more details.
+
+*** Short version
+**** Add content to existing pages
+      The Research, Publications, Talks, and Software pages get their contents from
+      their =markdown= and associated =yaml= file. So you have to modify
+      both files.
+
+**** Featured rows
+     The Home and Research pages contain a feature row to highlight your
+     interests. To modify these rows, you have to provide the required
+     information in each page. You can check the [[https://mmistakes.github.io/minimal-mistakes/docs/helpers/#feature-row][theme's webpage]]
+     for more details.
+
+**** Add and remove pages
+     Just create a =markdown= file in the =_pages= directory, add the
+     metadata, and content. You also have to modify the =navigation.yml= 
+     file.
+     
+     To remove pages, just delete the page from the =_pages= directory and
+     delete the entry from the =navigation.yml=.
+
+**** Adding files for download
+     Add the files you need to be available in the website (e.g., CV, pdf
+     for downloading) in the =downloads= directory.
+
+**** Blog
+     To modify the blog's home page, just add your content to the =blog.md=
+     file in =_pages=.
+      
+     Blog posts are in the =_posts= directory. You can remove the ones
+     that are there for illustration purposes. They are all from the 
+     minimal mistakes theme project template.
+
+     To add new blog posts, just create a new =markdown= file that meets the
+     name and metadata requirements and add your content. See the [[https://jekyllrb.com/docs/posts/][Jekyll's]] 
+     webpage for more details.
+
+** Further customization
+   The website has many more features. Please read
+   [[https://jekyllrb.com/docs/][Jekyll's]] and [[https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/][minimal mistakes theme]] documentation for 
+   learning how to modify how the website looks and how it's structured.
+
+** Note about modifying your website
+*** Modify the website online
+    You can use Github's webpage to modify your website. This is
+    the easiest method and may very well suit your needs. You won't have 
+    to install additional software and can modify your website from any
+    computer or device (e.g., tablet) without worrying much about anything
+    else. However, you won't be able to preview the changes to your website
+    before making them public. 
+
+    If you don't know what Git is or you don't feel comfortable with programming,
+    then this may be the best option for you.
+
+*** Modify the website on your computer
+    This option requires installing a few software and learning to use 
+    them. You will also need to learn to use a 
+    text editor (e.g., [[https://www.spacemacs.org/][spacemacs]] [my favorite :) ], [[https://www.vim.org/][vim]], [[https://atom.io/][atom]], [[https://notepad-plus-plus.org/][notepad]])
+
+    This requires installing the following software:
+     - [[https://www.ruby-lang.org/en/documentation/installation/][Ruby]] 
+     - [[https://jekyllrb.com/docs/][Jekyll]]
+     - [[https://git-scm.com/book/en/v2/Getting-Started-Installing-Git][Git]]
+     - Text editor (many computers have at least one installed by default)
+     
+    After you have installed the required software, you need to [[https://guides.github.com/activities/forking/#clone][Clone]] this
+    repo to your computer. You should now be able to modify add content
+    to your website.
+    
+    After making changes, preview them on your local computer following this
+    [[https://jekyllrb.com/docs/][guide]]. To make your changes public, you have to push them to GitHub using
+    Git.
+
+* Contributing to this project
+  All contributions are welcome!
+
+  You can help out by writing documentation or tutorials on how to modify
+  certain things, report bugs or errors in code or documentation, fixing bugs,
+  or by providing ideas. This is a beginner friendly project!
+
+  You are welcome to communicate any errors by [[https://github.com/mario-bermonti/academic-website-template/issues][submitting an
+  issue]] on Github.
+
+  To fix bugs, clone the repository, add your contribution, 
+  and submit a [[https://github.com/mario-bermonti/academic-website-template/pulls][pull request]].
+
+  If have suggestions on how to improve the website design (e.g., default
+  tabs, theme, etc.), please open an [[https://github.com/mario-bermonti/academic-website-template/issues][issue on Github]] or [[mailto:mbermonti1132@gmail.com][email me]]. Please
+  keep in mind that the template should be general enough that works for
+  most people and only suggestions that will benefit most people will be
+  incorporated.
+
+* Other options
+   - [[https://github.com/matthewkirby/academictemplate][Matthew Kirby's Academic template]] (I actually discovered this one too late)
+   - [[https://academicpages.github.io][Academic pages]] (it didn't work for me)
+
+* Author
+  This project was developed by Mario E. Bermonti-Perez as part of
+  his academic research and activities. Feel free to contact me at [[mailto:mbermonti@psm.edu][mbermonti@psm.edu]] or
+  [[mailto:mbermonti1132@gmail.com][mbermonti1132@gmail.com]]
+
+* License
+  This project is based on the [[https://github.com/mmistakes/minimal-mistakes/][minimal mistakes starter repository]] 
+  and is licensed under the MIT license, just as the original project.
+
+  Please read the =LICENSE= file for more details.

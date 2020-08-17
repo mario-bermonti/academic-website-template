@@ -1,273 +1,329 @@
-# [Minimal Mistakes Jekyll theme](https://mmistakes.github.io/minimal-mistakes/)
 
-[![LICENSE](https://img.shields.io/badge/license-MIT-lightgrey.svg)](https://raw.githubusercontent.com/mmistakes/minimal-mistakes/master/LICENSE)
-[![Jekyll](https://img.shields.io/badge/jekyll-%3E%3D%203.7-blue.svg)](https://jekyllrb.com/)
-[![Ruby gem](https://img.shields.io/gem/v/minimal-mistakes-jekyll.svg)](https://rubygems.org/gems/minimal-mistakes-jekyll)
-[![Tip Me via PayPal](https://img.shields.io/badge/PayPal-tip%20me-green.svg?logo=paypal)](https://www.paypal.me/mmistakes)
+# Table of Contents
 
-Minimal Mistakes is a flexible two-column Jekyll theme, perfect for building personal sites, blogs, and portfolios. As the name implies, styling is purposely minimalistic to be enhanced and customized by you :smile:.
+-   [Academic Website Template](#org6537545)
+-   [Building your website](#org6879612)
+-   [Modifying the website](#orge288457)
+    -   [Important note](#orgfbf6377)
+    -   [Adding the website's basic information](#org066e6cc)
+    -   [Adding content](#org2375670)
+        -   [Long version](#org0f0dfc5)
+        -   [Short version](#orgd26f83a)
+    -   [Further customization](#org097bbc0)
+    -   [Note about modifying your website](#orgf9bbe6d)
+        -   [Modify the website online](#org012e72f)
+        -   [Modify the website on your computer](#org670996b)
+-   [Contributing to this project](#org68b7f2c)
+-   [Other options](#org5b3fca5)
+-   [Author](#orgedf564f)
+-   [License](#orgadf2b54)
 
-:sparkles: See what's new in the [CHANGELOG](CHANGELOG.md).
 
-**If you enjoy this theme, please consider [supporting me](https://www.paypal.me/mmistakes) to continue developing and maintaining it.**
+<a id="org6537545"></a>
 
-[![Support via PayPal](https://cdn.jsdelivr.net/gh/twolfson/paypal-github-button@1.0.0/dist/button.svg)](https://www.paypal.me/mmistakes)
+# Academic Website Template
 
-**Note:** The theme uses the [jekyll-include-cache](https://github.com/benbalter/jekyll-include-cache) plugin which will need to be installed in your `Gemfile` and added to the `plugins` array of `_config.yml`. Otherwise you'll encounter `Unknown tag 'include_cached'` errors at build.
+This template was designed to provide an easy way to create academic 
+websites. The goal is to lower the barrier to create webpages
+for scholars with limited knowledge about programming.
 
-[![Minimal Mistakes live preview][2]][1]
+This is achieved by separating content from form. This way you can simply
+add your content and everything else is done for you. This template is
+heavily influenced by [Academic pages](https://github.com/academicpages/academicpages.github.io) and [Simon Ho's website](https://www.simonho.ca/).
 
-[1]: https://mmistakes.github.io/minimal-mistakes/
-[2]: screenshot.png (live preview)
+This website template is created with [Jekyll](https://jekyllrb.com/) - a static site generator -
+and uses the [minimal mistakes theme](https://mmistakes.github.io/minimal-mistakes/docs/). The template was created so that 
+it's easy to deyloy to [Github Pages](https://pages.github.com/), but you can make simple
+modifications to deploy it on other services (see the [Jekyll documentation](https://jekyllrb.com/docs/deployment/)).
 
-![layout examples](screenshot-layouts.png)
 
-## Notable features
+<a id="org6879612"></a>
 
-- Bundled as a "theme gem" for easier installation/upgrading.
-- Compatible with GitHub Pages.
-- Support for Jekyll's built-in Sass/SCSS preprocessor.
-- Nine different skins (color variations).
-- Several responsive layout options (single, archive index, search, splash, and paginated home page).
-- Optimized for search engines with support for [Twitter Cards](https://dev.twitter.com/cards/overview) and [Open Graph](http://ogp.me/) data.
-- Optional [header images](https://mmistakes.github.io/minimal-mistakes/docs/layouts/#headers), [custom sidebars](https://mmistakes.github.io/minimal-mistakes/docs/layouts/#sidebars), [table of contents](https://mmistakes.github.io/minimal-mistakes/docs/helpers/#table-of-contents), [galleries](https://mmistakes.github.io/minimal-mistakes/docs/helpers/#gallery), related posts, [breadcrumb links](https://mmistakes.github.io/minimal-mistakes/docs/configuration/#breadcrumb-navigation-beta), [navigation lists](https://mmistakes.github.io/minimal-mistakes/docs/helpers/#navigation-list), and more.
-- Commenting support (powered by [Disqus](https://disqus.com/), [Facebook](https://developers.facebook.com/docs/plugins/comments), Google+, [Discourse](https://www.discourse.org/), static-based via [Staticman](https://staticman.net/), and [utterances](https://utteranc.es/)).
-- [Google Analytics](https://www.google.com/analytics/) support.
-- UI localized text in English (default), Brazilian Portuguese (Português brasileiro), Catalan, Chinese, Danish, Dutch, Finnish, French (Français), German (Deutsch), Greek, Hindi (हिंदी), Hungarian, Indonesian, Irish (Gaeilge), Italian (Italiano), Japanese, Korean, Malayalam, Myanmar (Burmese), Nepali (Nepalese), Persian (فارسی), Polish, Punjabi (ਪੰਜਾਬੀ), Romanian, Russian, Slovak, Spanish (Español), Swedish, Thai, Turkish (Türkçe), and Vietnamese.
+# Building your website
 
-## Skins (color variations)
+1.  Create your own copy of this website by [forking](https://guides.github.com/activities/forking/) this GitHub repo
+2.  [Unwatch](https://docs.github.com/en/github/managing-subscriptions-and-notifications-on-github/managing-your-subscriptions#unwatch-a-repository) the repo
+3.  [Rename the repo](https://docs.github.com/en/enterprise/2.14/user/articles/renaming-a-repository) to <username>.github.io ([see step 3 of this guide](https://docs.github.com/en/github/working-with-github-pages/creating-a-github-pages-site-with-jekyll#creating-a-repository-for-your-site))
+4.  Your website should be live at
+    [https://<username>.github.io/](https://) ([see step 7 of this guide](https://docs.github.com/en/github/working-with-github-pages/creating-a-github-pages-site-with-jekyll#creating-a-repository-for-your-site))
 
-This theme comes in nine different skins (in addition to the default one).
 
-| `air` | `contrast` | `dark` |
-| --- | --- | --- |
-| [![air skin](https://mmistakes.github.io/minimal-mistakes/assets/images/air-skin-archive.png)](https://mmistakes.github.io/minimal-mistakes/assets/images/air-skin-archive-large.png) | [![contrast skin](https://mmistakes.github.io/minimal-mistakes/assets/images/contrast-skin-archive.png)](https://mmistakes.github.io/minimal-mistakes/assets/images/contrast-skin-archive-large.png) | [![dark skin](https://mmistakes.github.io/minimal-mistakes/assets/images/dark-skin-archive.png)](https://mmistakes.github.io/minimal-mistakes/assets/images/dark-skin-archive-large.png) |
+<a id="orge288457"></a>
 
-| `dirt` | `mint` | `sunrise` |
-| --- | --- | --- |
-| [![dirt skin](https://mmistakes.github.io/minimal-mistakes/assets/images/dirt-skin-archive.png)](https://mmistakes.github.io/minimal-mistakes/assets/images/dirt-skin-archive-large.png) | [![mint skin](https://mmistakes.github.io/minimal-mistakes/assets/images/mint-skin-archive.png)](https://mmistakes.github.io/minimal-mistakes/assets/images/mint-skin-archive-large.png) | [![sunrise skin](https://mmistakes.github.io/minimal-mistakes/assets/images/sunrise-skin-archive.png)](https://mmistakes.github.io/minimal-mistakes/assets/images/sunrise-skin-archive-large.png) |
+# Modifying the website
 
-| `aqua` | `neon` | `plum` |
-| --- | --- | --- |
-| [![aqua skin](https://mmistakes.github.io/minimal-mistakes/assets/images/aqua-skin-archive.png)](https://mmistakes.github.io/minimal-mistakes/assets/images/aqua-skin-archive-large.png) | [![neon skin](https://mmistakes.github.io/minimal-mistakes/assets/images/neon-skin-archive.png)](https://mmistakes.github.io/minimal-mistakes/assets/images/neon-skin-archive-large.png) | [![plum skin](https://mmistakes.github.io/minimal-mistakes/assets/images/plum-skin-archive.png)](https://mmistakes.github.io/minimal-mistakes/assets/images/plum-skin-archive-large.png) |
 
-## Demo pages
+<a id="orgfbf6377"></a>
 
-| Name                                        | Description                                           |
-| ------------------------------------------- | ----------------------------------------------------- |
-| [Post with Header Image][header-image-post] | A post with a large header image. |
-| [HTML Tags and Formatting Post][html-tags-post] | A variety of common markup showing how the theme styles them. |
-| [Syntax Highlighting Post][syntax-post] | Post displaying highlighted code. |
-| [Post with a Gallery][gallery-post] | A post showing several images wrapped in `<figure>` elements. |
-| [Sample Collection Page][sample-collection] | Single page from a collection. |
-| [Categories Archive][categories-archive] | Posts grouped by category. |
-| [Tags Archive][tags-archive] | Posts grouped by tag. |
+## Important note
 
-Additional sample posts are available under [posts archive][year-archive] on the demo site. Source files for these (and the entire demo site) can be found in [`/docs`](docs).
+There are two ways to modify your website. Each has pros and 
+cons and require using different tools. You should make you decision
+based on how comfortable you feel with the tools required for 
+each option, but most importantly, how likely you are of using
+them for other things. It may not be useful to learn a new tool
+if you're only going to use it once. 
 
-[header-image-post]: https://mmistakes.github.io/minimal-mistakes/layout-header-image-text-readability/
-[gallery-post]: https://mmistakes.github.io/minimal-mistakes/post%20formats/post-gallery/
-[html-tags-post]: https://mmistakes.github.io/minimal-mistakes/markup/markup-html-tags-and-formatting/
-[syntax-post]: https://mmistakes.github.io/minimal-mistakes/markup-syntax-highlighting/
-[sample-collection]: https://mmistakes.github.io/minimal-mistakes/recipes/chocolate-chip-cookies/
-[categories-archive]: https://mmistakes.github.io/minimal-mistakes/categories/
-[tags-archive]: https://mmistakes.github.io/minimal-mistakes/tags/
-[year-archive]: https://mmistakes.github.io/minimal-mistakes/year-archive/
+The two options are using GitHub's webpage or using Git locally. I
+will discuss them very briefly to help you make your decision.
+You can read the information in the section below "Note about modifying
+your website"
 
-## Installation
 
-There are three ways to install: as a [gem-based theme](https://jekyllrb.com/docs/themes/#understanding-gem-based-themes), as a [remote theme](https://blog.github.com/2017-11-29-use-any-theme-with-github-pages/) (GitHub Pages compatible), or forking/directly copying all of the theme files into your project.
+<a id="org066e6cc"></a>
 
-### Gem-based method
+## Adding the website's basic information
 
-With Gem-based themes, directories such as the `assets`, `_layouts`, `_includes`, and `_sass` are stored in the theme’s gem, hidden from your immediate view. Yet all of the necessary directories will be read and processed during Jekyll’s build process.
+This information is configured in
+the `_config.yml` file. Here you can add information like the website's name,
+your name, links to your research platforms, and many other information. 
+Explore the different options to find everything that can be modified.
 
-This allows for easier installation and updating as you don't have to manage any of the theme files. To install:
 
-1. Add the following to your `Gemfile`:
+<a id="org2375670"></a>
 
-   ```ruby
-   gem "minimal-mistakes-jekyll"
-   ```
+## Adding content
 
-2. Fetch and update bundled gems by running the following [Bundler](http://bundler.io/) command:
+Most pages incorporate their content from two sources: the actual 
+file (e.g., `Research.md`) and the `yaml` file with the same name that 
+can be found in the `_data` directory. 
 
-   ```bash
-   bundle
-   ```
+This helps facilitate the process of adding new information because
+the `yaml` files are very easy and intuitive to use, even if you don't know
+any programming. These files follow a *bullet* or outline format and just
+require you to *list* the contents you want displayed in your page.
 
-3. Set the `theme` in your project's Jekyll `_config.yml` file:
+For example, the Research page presents all the information that you include
+in the `Research.md` file and then it includes the research projects
+you have listed in the `research.yml` file. This makes it easier to 
+continually add new research projects in the `yaml` file and keep your 
+webpage updated.
 
-   ```yaml
-   theme: minimal-mistakes-jekyll
-   ```
 
-To update the theme run `bundle update`.
+<a id="org0f0dfc5"></a>
+
+### Long version
+
+If you know your way aroung Jekyll or similar platforms, you can skip
+to the next section *Short version*.
+
+This is the longer version and has all the details about managing your
+website and should get you through, even if you don't know anything about
+programming.
+
+-   Add content to existing pages
+
+    -   Regular content
+    
+        You can find the current pages in the `_pages` directory. To add new content,
+        just write it in the file and save it. Also modify the page's metadata
+        at the top of the page if you need to.
+        
+        If you would like to change the name of the page in the menu bar, you 
+        have to modify it in the `navigation.yml` file that is in the `_data` directory.
+    
+    -   Yaml content
+    
+        The Research, Publications, Talks, and Software pages list the relevant 
+        information by collecting it from its associated `yaml` file. These
+        files are located in the `_data` directory and have the same name
+        as the page (e.g., Research).
+        
+        To modify its content, just substitute the current information
+        with your information. Keep the "" if there are any. Optional 
+        fields are identified with comments.
+    
+    -   Featured rows
+    
+        The home and research pages contain a feature row to highlight your
+        interests. To modify these rows, you have to provide the required
+        information in each page. You can check the [theme's webpage](https://mmistakes.github.io/minimal-mistakes/docs/helpers/#feature-row)
+        for more details.
 
-### Remote theme method
+-   Add new pages
 
-Remote themes are similar to Gem-based themes, but do not require `Gemfile` changes or whitelisting making them ideal for sites hosted with GitHub Pages.
+    -   Create a `markdown` file in the `_pages` directory and add the content.
+    -   Add metadata at the top of the file
+        Hint: create a copy of an existing page and add the new content
+    -   Add the page to the menu bar, by adding it to the `navigation.yml` 
+        file. Follow the format of other entries and add the name of the tab
+        and add where the file will be saved to (permalink).
 
-To install:
+-   Remove existing pages
 
-1. Create/replace the contents of your `Gemfile` with the following:
+    -   Delete the page from the `_pages` directory
+    -   Delete the entry from the `navigation.yml`
 
-   ```ruby
-   source "https://rubygems.org"
+-   Adding files for download
 
-   gem "github-pages", group: :jekyll_plugins
-   ```
+    Add the files you need to be available in the website (e.g., CV, pdf
+    for downloading) in the `downloads` directory.
 
-2. Add `jekyll-include-cache` to the `plugins` array of your `_config.yml`.
+-   Creating blog posts
 
-3. Fetch and update bundled gems by running the following [Bundler](http://bundler.io/) command:
+    -   Blog's home page
+    
+        To modify the blog's home page, just add your content to the `blog.md`
+        file in `_pages`.
+        
+        Hint: If you only want the blog, you will have to remove all other
+              pages and set the blog's home as the website's homepage.
+    
+    -   Blog posts
+    
+        Blog posts are in the `_posts` directory. You can remove the ones
+        that are there for illustration purposes. They are all from the 
+        minimal mistakes theme project template.
+        
+        To add new blog posts, just create a new `markdown` file that meets the
+        name and metadata requirements and add your content. See the [Jekyll's](https://jekyllrb.com/docs/posts/) 
+        webpage for more details.
 
-   ```bash
-   bundle
-   ```
 
-4. Add `remote_theme: "mmistakes/minimal-mistakes@4.19.3"` to your `_config.yml` file. Remove any other `theme:` or `remote_theme:` entry.
+<a id="orgd26f83a"></a>
 
-**Looking for an example?** Use the [Minimal Mistakes remote theme starter](https://github.com/mmistakes/mm-github-pages-starter/generate) for the quickest method of getting a GitHub Pages hosted site up and running. Generate a new repository from the starter, replace sample content with your own, and configure as needed.
+### Short version
 
-## Usage
+-   Add content to existing pages
 
-For detailed instructions on how to configure, customize, add/migrate content, and more read the [theme's documentation](https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/).
+    The Research, Publications, Talks, and Software pages get their contents from
+    their `markdown` and associated `yaml` file. So you have to modify
+    both files.
 
----
+-   Featured rows
 
-## Contributing
+    The Home and Research pages contain a feature row to highlight your
+    interests. To modify these rows, you have to provide the required
+    information in each page. You can check the [theme's webpage](https://mmistakes.github.io/minimal-mistakes/docs/helpers/#feature-row)
+    for more details.
 
-Having trouble working with the theme? Found a typo in the documentation? Interested in adding a feature or [fixing a bug](https://github.com/mmistakes/minimal-mistakes/issues)? Then by all means [submit an issue](https://github.com/mmistakes/minimal-mistakes/issues/new) or [pull request](https://help.github.com/articles/using-pull-requests/). If this is your first pull request, it may be helpful to read up on the [GitHub Flow](https://guides.github.com/introduction/flow/) first.
+-   Add and remove pages
 
-Minimal Mistakes has been designed as a base for you to customize and fit your site's unique needs. Please keep this in mind when requesting features and/or submitting pull requests. If it's not something that most people will use, I probably won't consider it. When in doubt ask. 
+    Just create a `markdown` file in the `_pages` directory, add the
+    metadata, and content. You also have to modify the `navigation.yml` 
+    file.
+    
+    To remove pages, just delete the page from the `_pages` directory and
+    delete the entry from the `navigation.yml`.
 
-This goes for author sidebar links and "share button" additions -- I have no intention of merging in every possibly option, the essentials are there to get you started :smile:.
+-   Adding files for download
 
-### Pull Requests
+    Add the files you need to be available in the website (e.g., CV, pdf
+    for downloading) in the `downloads` directory.
 
-When submitting a pull request:
+-   Blog
 
-1. Clone the repo.
-2. Create a branch off of `master` and give it a meaningful name (e.g. `my-awesome-new-feature`).
-3. Open a pull request on GitHub and describe the feature or fix.
+    To modify the blog's home page, just add your content to the `blog.md`
+    file in `_pages`.
+    
+    Blog posts are in the `_posts` directory. You can remove the ones
+    that are there for illustration purposes. They are all from the 
+    minimal mistakes theme project template.
+    
+    To add new blog posts, just create a new `markdown` file that meets the
+    name and metadata requirements and add your content. See the [Jekyll's](https://jekyllrb.com/docs/posts/) 
+    webpage for more details.
 
-Theme documentation and demo pages can be found in the [`/docs`](docs) if submitting improvements, typo corrections, etc.
 
-## Development
+<a id="org097bbc0"></a>
 
-To set up your environment to develop this theme, run `bundle install`.
+## Further customization
 
-To test the theme, run `bundle exec rake preview` and open your browser at `http://localhost:4000/test/`. This starts a Jekyll server using content in the `test/` directory. As modifications are made to the theme and test site, it will regenerate and you should see the changes in the browser after a refresh.
+The website has many more features. Please read
+[Jekyll's](https://jekyllrb.com/docs/) and [minimal mistakes theme](https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/) documentation for 
+learning how to modify how the website looks and how it's structured.
 
----
 
-## Credits
+<a id="orgf9bbe6d"></a>
 
-### Creator
+## Note about modifying your website
 
-**Michael Rose**
 
-- <https://mademistakes.com>
-- <https://twitter.com/mmistakes>
-- <https://github.com/mmistakes>
+<a id="org012e72f"></a>
 
-### Icons + Demo Images:
+### Modify the website online
 
-- [The Noun Project](https://thenounproject.com) -- Garrett Knoll, Arthur Shlain, and [tracy tam](https://thenounproject.com/tracytam)
-- [Font Awesome](http://fontawesome.io/)
-- [Unsplash](https://unsplash.com/)
+You can use Github's webpage to modify your website. This is
+the easiest method and may very well suit your needs. You won't have 
+to install additional software and can modify your website from any
+computer or device (e.g., tablet) without worrying much about anything
+else. However, you won't be able to preview the changes to your website
+before making them public. 
 
-### Other:
+If you don't know what Git is or you don't feel comfortable with programming,
+then this may be the best option for you.
 
-- [Jekyll](http://jekyllrb.com/)
-- [jQuery](http://jquery.com/)
-- [Susy](http://susy.oddbird.net/)
-- [Breakpoint](http://breakpoint-sass.com/)
-- [Magnific Popup](http://dimsemenov.com/plugins/magnific-popup/)
-- [FitVids.JS](http://fitvidsjs.com/)
-- [GreedyNav.js](https://github.com/lukejacksonn/GreedyNav)
-- [Smooth Scroll](https://github.com/cferdinandi/smooth-scroll)
-- [Gumshoe](https://github.com/cferdinandi/gumshoe)
-- [jQuery throttle / debounce](http://benalman.com/projects/jquery-throttle-debounce-plugin/)
-- [Lunr](http://lunrjs.com)
 
----
+<a id="org670996b"></a>
 
-## License
+### Modify the website on your computer
 
-The MIT License (MIT)
+This option requires installing a few software and learning to use 
+them. You will also need to learn to use a 
+text editor (e.g., [spacemacs](https://www.spacemacs.org/) [my favorite :) ], [vim](https://www.vim.org/), [atom](https://atom.io/), [notepad](https://notepad-plus-plus.org/))
 
-Copyright (c) 2013-2020 Michael Rose and contributors
+This requires installing the following software:
 
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
+-   [Ruby](https://www.ruby-lang.org/en/documentation/installation/)
+-   [Jekyll](https://jekyllrb.com/docs/)
+-   [Git](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git)
+-   Text editor (many computers have at least one installed by default)
 
-The above copyright notice and this permission notice shall be included in all
-copies or substantial portions of the Software.
+After you have installed the required software, you need to [Clone](https://guides.github.com/activities/forking/#clone) this
+repo to your computer. You should now be able to modify add content
+to your website.
 
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-SOFTWARE.
+After making changes, preview them on your local computer following this
+[guide](https://jekyllrb.com/docs/). To make your changes public, you have to push them to GitHub using
+Git.
 
-Minimal Mistakes incorporates icons from [The Noun Project](https://thenounproject.com/) 
-creators Garrett Knoll, Arthur Shlain, and tracy tam.
-Icons are distributed under Creative Commons Attribution 3.0 United States (CC BY 3.0 US).
 
-Minimal Mistakes incorporates [Font Awesome](http://fontawesome.io/),
-Copyright (c) 2017 Dave Gandy.
-Font Awesome is distributed under the terms of the [SIL OFL 1.1](http://scripts.sil.org/OFL) 
-and [MIT License](http://opensource.org/licenses/MIT).
+<a id="org68b7f2c"></a>
 
-Minimal Mistakes incorporates photographs from [Unsplash](https://unsplash.com).
+# Contributing to this project
 
-Minimal Mistakes incorporates [Susy](http://susy.oddbird.net/),
-Copyright (c) 2017, Miriam Eric Suzanne.
-Susy is distributed under the terms of the [BSD 3-clause "New" or "Revised" License](https://opensource.org/licenses/BSD-3-Clause).
+All contributions are welcome!
 
-Minimal Mistakes incorporates [Breakpoint](http://breakpoint-sass.com/).
-Breakpoint is distributed under the terms of the [MIT/GPL Licenses](http://opensource.org/licenses/MIT).
+You can help out by writing documentation or tutorials on how to modify
+certain things, report bugs or errors in code or documentation, fixing bugs,
+or by providing ideas. This is a beginner friendly project!
 
-Minimal Mistakes incorporates [FitVids.js](https://github.com/davatron5000/FitVids.js/),
-Copyright (c) 2013 Dave Rubert and Chris Coyier.
-FitVids is distributed under the terms of the [WTFPL License](http://sam.zoy.org/wtfpl/).
+You are welcome to communicate any errors by [submitting an
+issue](https://github.com/mario-bermonti/academic-website-template/issues) on Github.
 
-Minimal Mistakes incorporates [Magnific Popup](http://dimsemenov.com/plugins/magnific-popup/),
-Copyright (c) 2014-2016 Dmitry Semenov, http://dimsemenov.com.
-Magnific Popup is distributed under the terms of the MIT License.
+To fix bugs, clone the repository, add your contribution, 
+and submit a [pull request](https://github.com/mario-bermonti/academic-website-template/pulls).
 
-Minimal Mistakes incorporates [Smooth Scroll](http://github.com/cferdinandi/smooth-scroll),
-Copyright (c) 2019 Chris Ferdinandi.
-Smooth Scroll is distributed under the terms of the [MIT License](http://opensource.org/licenses/MIT).
+If have suggestions on how to improve the website design (e.g., default
+tabs, theme, etc.), please open an [issue on Github](https://github.com/mario-bermonti/academic-website-template/issues) or [email me](mailto:mbermonti1132@gmail.com). Please
+keep in mind that the template should be general enough that works for
+most people and only suggestions that will benefit most people will be
+incorporated.
 
-Minimal Mistakes incorporates [Gumshoejs](http://github.com/cferdinandi/gumshoe),
-Copyright (c) 2019 Chris Ferdinandi.
-Smooth Scroll is distributed under the terms of the [MIT License](http://opensource.org/licenses/MIT).
 
-Minimal Mistakes incorporates [jQuery throttle / debounce](http://benalman.com/projects/jquery-throttle-debounce-plugin/),
-Copyright (c) 2010 "Cowboy" Ben Alman.
-jQuery throttle / debounce is distributed under the terms of the [MIT License](http://opensource.org/licenses/MIT).
+<a id="org5b3fca5"></a>
 
-Minimal Mistakes incorporates [GreedyNav.js](https://github.com/lukejacksonn/GreedyNav),
-Copyright (c) 2015 Luke Jackson.
-GreedyNav.js is distributed under the terms of the [MIT License](http://opensource.org/licenses/MIT).
+# Other options
 
-Minimal Mistakes incorporates [Jekyll Group-By-Array](https://github.com/mushishi78/jekyll-group-by-array),
-Copyright (c) 2015 Max White <mushishi78@gmail.com>.
-Jekyll Group-By-Array is distributed under the terms of the [MIT License](http://opensource.org/licenses/MIT).
+-   [Matthew Kirby's Academic template](https://github.com/matthewkirby/academictemplate) (I actually discovered this one too late)
+-   [Academic pages](https://academicpages.github.io) (it didn't work for me)
 
-Minimal Mistakes incorporates [@allejo's Pure Liquid Jekyll Table of Contents](https://allejo.io/blog/a-jekyll-toc-in-liquid-only/),
-Copyright (c) 2017 Vladimir Jimenez.
-Pure Liquid Jekyll Table of Contents is distributed under the terms of the [MIT License](http://opensource.org/licenses/MIT).
 
-Minimal Mistakes incorporates [Lunr](http://lunrjs.com),
-Copyright (c) 2018 Oliver Nightingale.
-Lunr is distributed under the terms of the [MIT License](http://opensource.org/licenses/MIT).
+<a id="orgedf564f"></a>
+
+# Author
+
+This project was developed by Mario E. Bermonti-Perez as part of
+his academic research and activities. Feel free to contact me at [mbermonti@psm.edu](mailto:mbermonti@psm.edu) or
+[mbermonti1132@gmail.com](mailto:mbermonti1132@gmail.com)
+
+
+<a id="orgadf2b54"></a>
+
+# License
+
+This project is based on the [minimal mistakes starter repository](https://github.com/mmistakes/minimal-mistakes/) 
+and is licensed under the MIT license, just as the original project.
+
+Please read the `LICENSE` file for more details.
+
