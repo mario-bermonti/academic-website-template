@@ -1,16 +1,17 @@
 
 # Table of Contents
 
--   [Academic Website Template](#orgb557080)
-    -   [Note about modifying your website](#org91012c9)
+-   [Academic Website Template](#org56b0b7c)
+    -   [Note about modifying your website](#org7d88a23)
+    -   [Other useful resources](#orgf53b4e7)
 
 
-<a id="orgb557080"></a>
+<a id="org56b0b7c"></a>
 
 # Academic Website Template
 
 
-<a id="org91012c9"></a>
+<a id="org7d88a23"></a>
 
 ## Note about modifying your website
 
@@ -56,4 +57,11 @@ discuss them very briefly below to help you make your decision.
     After making changes, preview them on your local computer following this
     [guide](https://jekyllrb.com/docs/). To make your changes public, you have to push them to GitHub using
     Git.
+
+
+<a id="orgf53b4e7"></a>
+
+## Other useful resources
+
+-   [Create your Academic Website in Jekyll and Host it on Github](http://svmiller.com/blog/2015/08/create-your-website-in-jekyll/)
 

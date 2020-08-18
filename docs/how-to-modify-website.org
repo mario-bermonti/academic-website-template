@@ -40,3 +40,6 @@
      [[https://jekyllrb.com/docs/][guide]]. To make your changes public, you have to push them to GitHub using
      Git.
 
+** Other useful resources
+   - [[http://svmiller.com/blog/2015/08/create-your-website-in-jekyll/][Create your Academic Website in Jekyll and Host it on Github]]
+

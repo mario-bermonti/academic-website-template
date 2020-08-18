@@ -1,17 +1,18 @@
 
 # Table of Contents
 
--   [Academic Website Template](#org6311719)
-    -   [Adding content to your website](#org5d2bbc4)
-    -   [Further customization](#org6a7b6e4)
+-   [Academic Website Template](#org985a391)
+    -   [Adding content to your website](#org4bb9e11)
+    -   [Further customization](#orgb10c7c4)
+    -   [Other useful resources](#org103c2ef)
 
 
-<a id="org6311719"></a>
+<a id="org985a391"></a>
 
 # Academic Website Template
 
 
-<a id="org5d2bbc4"></a>
+<a id="org4bb9e11"></a>
 
 ## Adding content to your website
 
@@ -90,11 +91,19 @@ even if you don't know anything about programming.
         webpage for more details.
 
 
-<a id="org6a7b6e4"></a>
+<a id="orgb10c7c4"></a>
 
 ## Further customization
 
 The website has many more features. Please read [Jekyll's](https://jekyllrb.com/docs/) and
 [minimal mistakes theme](https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/) documentation for learning how to modify
 how the website looks and how it's structured.
+
+
+<a id="org103c2ef"></a>
+
+## Other useful resources
+
+-   [Create your Academic Website in Jekyll and Host it on Github](http://svmiller.com/blog/2015/08/create-your-website-in-jekyll/)
+-   [Jekyll Academic Quickstart](https://ncsu-libraries.github.io/jekyll-academic-docs/)
 

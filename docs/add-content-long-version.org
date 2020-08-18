@@ -67,3 +67,7 @@
    [[https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/][minimal mistakes theme]] documentation for learning how to modify
    how the website looks and how it's structured.
 
+** Other useful resources
+   - [[http://svmiller.com/blog/2015/08/create-your-website-in-jekyll/][Create your Academic Website in Jekyll and Host it on Github]]
+   - [[https://ncsu-libraries.github.io/jekyll-academic-docs/][Jekyll Academic Quickstart]] 
+
