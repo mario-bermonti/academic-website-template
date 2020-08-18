@@ -13,5 +13,8 @@ main:
     url: /downloads/cv.pdf
   - title: "Blog"
     url: /blog/
+  - title: "View on GitHub"
+    url: https://github.com/mario-bermonti/academic-website-template
+
 
 
