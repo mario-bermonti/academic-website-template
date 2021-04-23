@@ -38,9 +38,9 @@ modifications to deploy it on other services (see the [Jekyll documentation](htt
 
 1.  Create your own copy of this website by [forking](https://guides.github.com/activities/forking/) this GitHub repo
 2.  [Unwatch](https://docs.github.com/en/github/managing-subscriptions-and-notifications-on-github/managing-your-subscriptions#unwatch-a-repository) the repo
-3.  [Rename the repo](https://docs.github.com/en/enterprise/2.14/user/articles/renaming-a-repository) to <username>.github.io ([see step 3 of this guide](https://docs.github.com/en/github/working-with-github-pages/creating-a-github-pages-site-with-jekyll#creating-a-repository-for-your-site))
+3.  [Rename the repo](https://docs.github.com/en/enterprise/2.14/user/articles/renaming-a-repository) to <https://username.github.io> ([see step 3 of this guide](https://docs.github.com/en/github/working-with-github-pages/creating-a-github-pages-site-with-jekyll#creating-a-repository-for-your-site))
 4.  Your website should be live at
-    <https://<username>.github.io/> ([see step 7 of this guide](https://docs.github.com/en/github/working-with-github-pages/creating-a-github-pages-site-with-jekyll#creating-a-repository-for-your-site))
+    <https://username.github.io> ([see step 7 of this guide](https://docs.github.com/en/github/working-with-github-pages/creating-a-github-pages-site-with-jekyll#creating-a-repository-for-your-site))
 
 
 <a id="org3f81932"></a>
