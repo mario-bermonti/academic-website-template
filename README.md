@@ -186,5 +186,5 @@ at [mbermonti@psm.edu](mailto:mbermonti@psm.edu) or [mbermonti1132@gmail.com](ma
 This project is based on the [minimal mistakes starter repository](https://github.com/mmistakes/minimal-mistakes/) 
 and is licensed under the MIT license, just as the original project.
 
-Please read the `LICENSE` file for more details.
+Please read the [License](./LICENSE) file for more details.
 
